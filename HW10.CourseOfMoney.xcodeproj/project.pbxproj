@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		881F79C82431E4D900DEF9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79C72431E4D900DEF9CE /* AppDelegate.swift */; };
 		881F79CA2431E4D900DEF9CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79C92431E4D900DEF9CE /* SceneDelegate.swift */; };
-		881F79CC2431E4D900DEF9CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79CB2431E4D900DEF9CE /* ViewController.swift */; };
 		881F79CF2431E4D900DEF9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F79CD2431E4D900DEF9CE /* Main.storyboard */; };
 		881F79D12431E4DB00DEF9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881F79D02431E4DB00DEF9CE /* Assets.xcassets */; };
 		881F79D42431E4DB00DEF9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F79D22431E4DB00DEF9CE /* LaunchScreen.storyboard */; };
+		881F79E12431E56D00DEF9CE /* Сurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79E02431E56D00DEF9CE /* Сurrency.swift */; };
+		881F79E32431EE7700DEF9CE /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79E22431EE7700DEF9CE /* CurrencyCell.swift */; };
+		881F79E92433185D00DEF9CE /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79E82433185D00DEF9CE /* CurrencyViewController.swift */; };
+		881F79EE243347D700DEF9CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79ED243347D700DEF9CE /* MainViewController.swift */; };
+		881F79F0243472F400DEF9CE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F79EF243472F400DEF9CE /* UserActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		881F79C42431E4D900DEF9CE /* HW10.CourseOfMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW10.CourseOfMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F79C72431E4D900DEF9CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		881F79C92431E4D900DEF9CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		881F79CB2431E4D900DEF9CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		881F79CE2431E4D900DEF9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881F79D02431E4DB00DEF9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		881F79D32431E4DB00DEF9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		881F79D52431E4DB00DEF9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881F79E02431E56D00DEF9CE /* Сurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сurrency.swift"; sourceTree = "<group>"; };
+		881F79E22431EE7700DEF9CE /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		881F79E82433185D00DEF9CE /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		881F79ED243347D700DEF9CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		881F79EF243472F400DEF9CE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		881F79C62431E4D900DEF9CE /* HW10.CourseOfMoney */ = {
 			isa = PBXGroup;
 			children = (
-				881F79C72431E4D900DEF9CE /* AppDelegate.swift */,
-				881F79C92431E4D900DEF9CE /* SceneDelegate.swift */,
-				881F79CB2431E4D900DEF9CE /* ViewController.swift */,
-				881F79CD2431E4D900DEF9CE /* Main.storyboard */,
-				881F79D02431E4DB00DEF9CE /* Assets.xcassets */,
-				881F79D22431E4DB00DEF9CE /* LaunchScreen.storyboard */,
-				881F79D52431E4DB00DEF9CE /* Info.plist */,
+				881F79DF2431E53600DEF9CE /* Models */,
+				881F79DD2431E50800DEF9CE /* SupportinfFiles */,
+				881F79DC2431E4FC00DEF9CE /* ViewControllers */,
+				881F79DB2431E4EA00DEF9CE /* Storyboards */,
+				881F79DE2431E52B00DEF9CE /* Resources */,
 			);
 			path = HW10.CourseOfMoney;
+			sourceTree = "<group>";
+		};
+		881F79DB2431E4EA00DEF9CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				881F79CD2431E4D900DEF9CE /* Main.storyboard */,
+				881F79D22431E4DB00DEF9CE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		881F79DC2431E4FC00DEF9CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				881F79E82433185D00DEF9CE /* CurrencyViewController.swift */,
+				881F79ED243347D700DEF9CE /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		881F79DD2431E50800DEF9CE /* SupportinfFiles */ = {
+			isa = PBXGroup;
+			children = (
+				881F79C72431E4D900DEF9CE /* AppDelegate.swift */,
+				881F79C92431E4D900DEF9CE /* SceneDelegate.swift */,
+				881F79D52431E4DB00DEF9CE /* Info.plist */,
+			);
+			path = SupportinfFiles;
+			sourceTree = "<group>";
+		};
+		881F79DE2431E52B00DEF9CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				881F79D02431E4DB00DEF9CE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		881F79DF2431E53600DEF9CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				881F79E02431E56D00DEF9CE /* Сurrency.swift */,
+				881F79E22431EE7700DEF9CE /* CurrencyCell.swift */,
+				881F79EF243472F400DEF9CE /* UserActionCell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881F79CC2431E4D900DEF9CE /* ViewController.swift in Sources */,
+				881F79EE243347D700DEF9CE /* MainViewController.swift in Sources */,
+				881F79E32431EE7700DEF9CE /* CurrencyCell.swift in Sources */,
 				881F79C82431E4D900DEF9CE /* AppDelegate.swift in Sources */,
+				881F79F0243472F400DEF9CE /* UserActionCell.swift in Sources */,
+				881F79E12431E56D00DEF9CE /* Сurrency.swift in Sources */,
 				881F79CA2431E4D900DEF9CE /* SceneDelegate.swift in Sources */,
+				881F79E92433185D00DEF9CE /* CurrencyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4XKPBDWQQ;
-				INFOPLIST_FILE = HW10.CourseOfMoney/Info.plist;
+				INFOPLIST_FILE = HW10.CourseOfMoney/SupportinfFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4XKPBDWQQ;
-				INFOPLIST_FILE = HW10.CourseOfMoney/Info.plist;
+				INFOPLIST_FILE = HW10.CourseOfMoney/SupportinfFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
