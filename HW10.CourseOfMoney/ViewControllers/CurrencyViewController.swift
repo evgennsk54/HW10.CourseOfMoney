@@ -12,19 +12,20 @@ class CurrencyViewController: UITableViewController {
 
     let jsonURL = "https://www.cbr-xml-daily.ru/daily_json.js"
     
-    private var currencies: Currency?
-    private var valutes: [Valute] = []
+    var rates: [Valute] = []
+    
+    let valutes = ["USD" ,"EUR","GBP","AUD", "AZN", "AMD", "BYN", "BGN", "BRL", "HUF", "DKK", "INR" ,"KZT" ,"CAD" ,"KGS","CNY" ,"MDL" ,"NOK" ,"PLN" ,"RON" ,"XDR" ,"SGD" ,"TJS" ,"TRY" ,"TMT" ,"UZS" ,"UAH" ,"CZK" ,"SEK" ,"CHF" ,"ZAR" ,"KRW" ,"JPY" ]
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return valutes.count
+        return rates.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyCell
         
-        let valute = valutes[indexPath.row]
-        cell.configure(with: valute)
+        let rate = rates[indexPath.row]
+        cell.configure(with: rate)
         
         return cell
     }
@@ -32,15 +33,15 @@ class CurrencyViewController: UITableViewController {
     func fetchCurrency() {
         guard let url = URL(string: jsonURL) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
-            guard let response = response else { return }
             
             do {
-                self.currencies = try JSONDecoder().decode(Currency.self, from: data)
-                print(self.currencies as Any)
-                print(response)
-                print(self.valutes)
+                let decoder = JSONDecoder()
+                let currencies = try decoder.decode(Currency.self, from: data)
+                for value in self.valutes {
+                    self.rates.append(currencies.valute[value]!)
+                }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

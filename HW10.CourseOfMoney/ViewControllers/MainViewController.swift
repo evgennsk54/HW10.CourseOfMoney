@@ -40,10 +40,10 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
         
         switch userAction {
-        case .alamofire:
-            performSegue(withIdentifier: "Alamofire", sender: nil)
         case .urlSession:
             performSegue(withIdentifier: "URLSession", sender: nil)
+        case .alamofire:
+            performSegue(withIdentifier: "Alamofire", sender: nil)
         }
     }
     

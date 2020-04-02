@@ -29,7 +29,7 @@ struct Valute: Decodable {
 // MARK: - Currency
 struct Currency: Decodable {
     let previousURL: String?
-    let valute: [String: Valute]?
+    let valute: [String: Valute]
     
     enum CodingKeys: String, CodingKey {
         case previousURL = "PreviousURL"

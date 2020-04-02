@@ -10,13 +10,13 @@
         <!--КУРС ЦБ НА 30.03.2020-->
         <scene sceneID="lm0-cq-pG1">
             <objects>
-                <tableViewController id="yOi-Fy-2xv" customClass="CurrencyViewController" customModule="HW10_CourseOfMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="yOi-Fy-2xv" customClass="CurrencyViewController" customModule="HW10_CourseOfMoney" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xTL-pz-egL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uwq-Ir-hnY" customClass="CurrencyCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uwq-Ir-hnY" customClass="CurrencyCell" customModule="HW10_CourseOfMoney">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uwq-Ir-hnY" id="VhG-P7-AfY">
@@ -24,35 +24,35 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-Xb-mf3">
-                                            <rect key="frame" x="5" y="12" width="40" height="20"/>
+                                            <rect key="frame" x="5" y="13" width="40" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="JiQ-nt-9dJ"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-Gs-4Fr">
-                                            <rect key="frame" x="53" y="11.5" width="40" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-Gs-4Fr">
+                                            <rect key="frame" x="53" y="13" width="45" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="40" id="hCm-LC-yJy"/>
+                                                <constraint firstAttribute="width" constant="45" id="hCm-LC-yJy"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78.87" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LI-Dk-pOV">
-                                            <rect key="frame" x="320" y="11.5" width="50" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78.87" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LI-Dk-pOV">
+                                            <rect key="frame" x="310" y="13" width="60" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="jo2-t2-x0L"/>
+                                                <constraint firstAttribute="width" constant="60" id="jo2-t2-x0L"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Американский доллар" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-t4-8ud">
-                                            <rect key="frame" x="101" y="11.5" width="211" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Американский доллар" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-t4-8ud">
+                                            <rect key="frame" x="106" y="13.5" width="196" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -70,10 +70,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="countCurrencyLabel" destination="RTj-Gs-4Fr" id="NNL-0n-2cY"/>
-                                    <outlet property="currentCourceLabel" destination="3LI-Dk-pOV" id="JQH-SO-XzN"/>
-                                    <outlet property="fullNameCurrencyLabel" destination="uoS-t4-8ud" id="73Z-oH-UxQ"/>
-                                    <outlet property="nameCurrencyLabel" destination="ZmE-Xb-mf3" id="na1-lc-E6r"/>
+                                    <outlet property="countCurrencyLabel" destination="RTj-Gs-4Fr" id="YCm-NA-X9z"/>
+                                    <outlet property="currentCourceLabel" destination="3LI-Dk-pOV" id="xj9-WZ-NMQ"/>
+                                    <outlet property="fullNameCurrencyLabel" destination="uoS-t4-8ud" id="Gbd-gQ-Lg8"/>
+                                    <outlet property="nameCurrencyLabel" destination="ZmE-Xb-mf3" id="l0i-04-caM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -164,6 +164,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="17s-wd-vih"/>
+        <segue reference="rSy-Tt-CAq"/>
     </inferredMetricsTieBreakers>
 </document>

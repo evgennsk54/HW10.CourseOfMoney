@@ -15,10 +15,12 @@ class CurrencyCell: UITableViewCell {
     @IBOutlet var fullNameCurrencyLabel: UILabel!
     @IBOutlet var currentCourceLabel: UILabel!
     
-    func configure(with valute: Valute) {
-        nameCurrencyLabel.text = valute.charCode
-        fullNameCurrencyLabel.text = valute.name
-        countCurrencyLabel.text = "\(valute.nominal ?? 0)"
-        currentCourceLabel.text = "\(valute.value ?? 0.0)"
+    func configure(with rate: Valute) {
+        nameCurrencyLabel.text = rate.charCode
+        fullNameCurrencyLabel.text = rate.name
+        countCurrencyLabel.text = "\(rate.nominal ?? 0)"
+//        currentCourceLabel.text = "\(rate.value ?? 0.0)"
+        currentCourceLabel.text = String(describing:
+            Double(round(100*(rate.value ?? 0.00))/100))
     }
 }
